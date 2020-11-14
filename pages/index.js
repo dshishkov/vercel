@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styles from 'styles/Home.module.css'
+import SomeComponent from 'components/SomeComponent'
 
 let Home = () => (
   <div className={styles.container}>
@@ -9,9 +10,11 @@ let Home = () => (
     </Head>
 
     <main className={styles.main}>
-      <h1 className={styles.title}>
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
+      <SomeComponent>
+        <h1 className={styles.title}>
+          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        </h1>
+      </SomeComponent>
 
       <p className={styles.description}>
         Get started by editing{' '}
@@ -42,9 +45,7 @@ let Home = () => (
           className={styles.card}
         >
           <h3>Deploy &rarr;</h3>
-          <p>
-            Instantly deploy your Next.js site to a public URL with Vercel.
-          </p>
+          <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
         </a>
       </div>
     </main>

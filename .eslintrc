@@ -43,5 +43,14 @@
         "react/prop-types": "off",
         "react/jsx-props-no-spreading": "off"
     },
-    "ignorePatterns": ["node_modules/", ".next/"]
+    "ignorePatterns": ["node_modules/", ".next/"],
+    "settings": {
+        "import/resolver": {
+            "alias": [
+                ["pages", "./pages"],
+                ["components", "./components"],
+                ["styles", "./styles"]
+            ]
+        }
+    }
 }
