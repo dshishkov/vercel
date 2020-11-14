@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react'
-import Home from './index'
+import Home from '../index'
 
 // `describe` is not required, but it helps the tests read nicely
 describe('The Home Page Component', () => {
