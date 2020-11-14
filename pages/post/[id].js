@@ -2,8 +2,8 @@ import { useRouter } from 'next/router'
 
 let Post = ({ post }) => {
   let router = useRouter()
-  console.log(router)
-  debugger
+  // console.log(router)
+  // debugger
   return router.isFallback ? (
     <div>Loading...</div>
   ) : (
@@ -22,7 +22,7 @@ let getProps = async ({ params: { id } }) => {
 export let getStaticProps = getProps
 
 export let getStaticPaths = async () => ({
-  paths: ['/post/1', '/post/2'],
+  paths: [{ params: { id: '1' } }],
   fallback: true,
 })
 

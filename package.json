@@ -6,7 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "format": "prettier --ignore-path coverage --write 'pages/**/*.js'"
+    "format": "prettier --ignore-path coverage --write '**/*.js'",
+    "lint": "eslint --ext .js ./",
+    "lint-fix": "eslint --fix --ext .js ./",
+    "fix": "npm run format && npm run lint-fix",
+    "test": "jest --no-cache",
+    "install:ci": "npm ci"
   },
   "dependencies": {
     "next": "10.0.0",
@@ -14,6 +19,17 @@
     "react-dom": "17.0.1"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.1.2",
+    "@types/jest": "^26.0.15",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.0.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
     "prettier": "2.1.2"
   },
   "prettier": {

@@ -1,0 +1,47 @@
+{
+    "extends": [
+        "eslint-config-airbnb"
+    ],
+    "env": {
+        "browser": true,
+        "node": true,
+        "jest": true,
+        "es2020": true
+    },
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "rules": {
+        "indent": ["error", 2],
+        "quotes": ["error", "single"],
+        "semi": ["error", "never"],
+        "max-len": 0,
+        "max-lines-per-function": 0,
+        "space-before-function-paren": ["error", {
+            "anonymous": "never",
+            "named": "never",
+            "asyncArrow": "always"
+        }],
+        "function-call-argument-newline": 0,
+        "prefer-const": "off",
+        "spaced-comment": "off",
+        "padded-blocks": 0,
+        "import/no-mutable-exports": "off",
+        "object-curly-spacing": ["error", "always"],
+        "one-var": ["error", "never"],
+        "quote-props": 0,
+        "react/jsx-indent": [2, 2],
+        "react/jsx-indent-props": [2, 2],
+        "react/jsx-filename-extension": 0,
+        "react/react-in-jsx-scope": 0,
+        "react/jsx-no-literals": 0,
+        "react/jsx-one-expression-per-line": 0,
+        "react/jsx-max-depth": 0,
+        "react/prop-types": "off",
+        "react/jsx-props-no-spreading": "off"
+    },
+    "ignorePatterns": ["node_modules/", ".next/"]
+}
