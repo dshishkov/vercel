@@ -1,5 +1,3 @@
-function About() {
-  return <div>About</div>
-}
+let About = () => <div>About</div>
 
 export default About
