@@ -2,8 +2,7 @@ import { useRouter } from 'next/router'
 
 let Post = ({ post }) => {
   let router = useRouter()
-  // console.log(router)
-  // debugger
+
   return router.isFallback ? (
     <div>Loading...</div>
   ) : (
