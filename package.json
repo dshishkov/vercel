@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "format": "prettier --ignore-path coverage --write '**/*.js'",
+    "format": "prettier --write '**/*.js'",
     "lint": "eslint --ext .js ./",
     "lint-fix": "eslint --fix --ext .js ./",
     "fix": "npm run format && npm run lint-fix",
